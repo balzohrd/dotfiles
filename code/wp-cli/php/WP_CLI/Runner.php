@@ -110,6 +110,10 @@ class Runner {
 	}
 
 	private static function is_absolute_path( $path ) {
+		// Windows
+		if ( ':' === $path[1] )
+			return true;
+
 		return $path[0] === '/';
 	}
 
@@ -332,13 +336,6 @@ class Runner {
 			if ( !isset( $_SERVER['HTTP_HOST'] ) ) {
 				Utils\set_url_params( 'http://example.com' );
 			}
-		}
-	}
-
-	public function after_wp_config_load() {
-		if ( $this->config['debug'] ) {
-			if ( !defined( 'WP_DEBUG' ) )
-				define( 'WP_DEBUG', true );
 		}
 	}
 
