@@ -1,0 +1,43 @@
+.\" generated with Ronn/v0.7.3
+.\" http://github.com/rtomayko/ronn/tree/0.7.3
+.
+.TH "WP\-SCAFFOLD\-POST\-TYPE" "1" "" "WP-CLI"
+.
+.SH "NAME"
+\fBwp\-scaffold\-post\-type\fR \- Generate PHP code for registering a custom post type\.
+.
+.SH "SYNOPSIS"
+wp scaffold post\-type \fIslug\fR [\-\-textdomain=\fItextdomain\fR] [\-\-theme] [\-\-plugin=\fIplugin\fR] [\-\-label=\fIlabel\fR] [\-\-raw]
+.
+.SH "OPTIONS"
+.
+.TP
+\fB\-\-label=<label>\fR:
+.
+.IP
+The text used to translate the update messages
+.
+.TP
+\fB\-\-textdomain=<textdomain>\fR:
+.
+.IP
+The textdomain to use for the labels\.
+.
+.TP
+\fB\-\-theme\fR:
+.
+.IP
+Create a file in the current theme directory, instead of sending to STDOUT\.
+.
+.TP
+\fB\-\-plugin=<plugin>\fR:
+.
+.IP
+Create a file in the given plugin\'s directory, instead of sending to STDOUT\.
+.
+.TP
+\fB\-\-raw\fR:
+.
+.IP
+Just generate the \fBregister_post_type()\fR call and nothing else\.
+

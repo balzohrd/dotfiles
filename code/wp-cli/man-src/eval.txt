@@ -1,0 +1,3 @@
+## EXAMPLES
+
+	wp eval 'echo WP_CONTENT_DIR;'

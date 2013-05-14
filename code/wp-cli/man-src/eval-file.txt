@@ -1,0 +1,3 @@
+## EXAMPLES
+
+	wp eval-file my-code.php

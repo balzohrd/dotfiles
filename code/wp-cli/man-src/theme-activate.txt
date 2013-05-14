@@ -1,0 +1,5 @@
+## OPTIONS
+
+* `<theme>`:
+
+	The theme to activate.
